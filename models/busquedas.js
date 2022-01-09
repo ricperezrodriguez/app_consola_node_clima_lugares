@@ -1,5 +1,5 @@
 const axios = require('axios');
-
+require('dotenv').config()
 
 class Busquedas {
     historial = ['Tegucigalpa', 'Madrid', 'San José'];
@@ -10,7 +10,7 @@ class Busquedas {
 
     get paramsMapbox() {
         return {
-            'access_token': 'pk.eyJ1IjoicmljcGVyZXpyb2RyaWd1ZXoiLCJhIjoiY2t5N3I1cGw2MThyYjJvcW5kbTVzbXRnMSJ9.q2BCupPHoI_WKQRuyzr2fg',
+            'access_token': process.env.MAPBOX_KEY,
             'limit': 5,
             'language': 'es'
         }

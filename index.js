@@ -2,6 +2,7 @@ const { inquirerMenu, pausa, leerInput } = require("./helpers/inquirer");
 const Busquedas = require("./models/busquedas");
 
 
+
 const main = async () => {
 
     const busquedas = new Busquedas();
